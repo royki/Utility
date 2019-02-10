@@ -1,0 +1,36 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<project>
+  <actions/>
+  <description></description>
+  <keepDependencies>false</keepDependencies>
+  <properties>
+    <org.jenkinsci.plugins.flow__plugin.FlowProjectProperty plugin="flow@1.3"/>
+  </properties>
+  <scm class="hudson.scm.NullSCM"/>
+  <canRoam>true</canRoam>
+  <disabled>false</disabled>
+  <blockBuildWhenDownstreamBuilding>false</blockBuildWhenDownstreamBuilding>
+  <blockBuildWhenUpstreamBuilding>false</blockBuildWhenUpstreamBuilding>
+  <triggers/>
+  <concurrentBuild>false</concurrentBuild>
+  <builders>
+    <com.hp.application.automation.tools.run.SseBuilder plugin="hp-application-automation-tools-plugin@4.0.1">
+      <__sseModel>
+        <__almServerName>almprod</__almServerName>
+        <__almUserName>app-alm-shooter</__almUserName>
+        <__almPassword class="com.hp.application.automation.tools.model.SecretContainerImpl">
+          <__secret>+FsKenqAWQ0D3VLqr2zQFOg6Vat9Pj/ScIwBplrpQy0=</__secret>
+        </__almPassword>
+        <__almDomain>MIDDLEWARE</__almDomain>
+        <__almProject>SIO_SI_OSR_PORTAL</__almProject>
+        <__timeslotDuration>200</__timeslotDuration>
+        <__description></__description>
+        <__runType>TEST_SET</__runType>
+        <__almEntityId>3957</__almEntityId>
+        <__environmentConfigurationId></__environmentConfigurationId>
+      </__sseModel>
+    </com.hp.application.automation.tools.run.SseBuilder>
+  </builders>
+  <publishers/>
+  <buildWrappers/>
+</project>

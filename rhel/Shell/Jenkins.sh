@@ -1,0 +1,2 @@
+# reading from .xml file, get "testsuite", cut error and failures, cut value of eorror and failures, 
+cat TESTS-TestSuites.xml | grep "<testsuite" | tr -s " "| cut -d " " -f3,4 | cut -c9,22 | sed 's/\"//g' | paste -sd+ | bc
